@@ -1,0 +1,120 @@
+/* Reset de márgenes y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f7f1e3; /* Fondo bonito color crema/papel */
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Textura sutil */
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Header con fondo de imagen o color sólido elegante */
+.hero-header {
+    background: #8b4513;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal */
+.recipe-container {
+    max-width: 1100px;
+    margin: -30px auto 40px;
+    padding: 20px;
+}
+
+/* Uso de Grid para acomodar la información */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+/* Tarjetas de información */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #d35400;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f1c40f;
+    display: inline-block;
+}
+
+/* Estilo de listas */
+.styled-list {
+    list-style: none;
+}
+
+.styled-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.styled-list li::before {
+    content: "✔";
+    color: #27ae60;
+    margin-right: 10px;
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Manejo de imágenes */
+.ingredient-imgs img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.main-dish-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.final-showcase {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Footer */
+.recipe-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .recipe-container {
+        margin-top: 20px;
+    }
+}
