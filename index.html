@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--* Contendor principal (BEM:Block)-->
+    <div class="container">
+        <header> <!--? Bloque-->
+            <h1 class="header_title">Mi sitio web</h1> <!--* Elemento del bloque-->
+        </header>
+
+        <!--* Seccion principal -->
+        <main class="main">
+
+            <!--* Trajeta BEM block -->
+            <section class="card card--highlight"> <!--? Modificador -->
+                <h2 class="card_title">Tarjeta 1</h2>
+                <p class="card_text">Este es un ejemplo de BEM</p>
+            </section>
+
+            <!--* Trajeta 2 -->
+            <section class="card"> <!--? Modificador -->
+                <h2 class="card_title">Tarjeta 2</h2>
+                <p class="card_text">Este es un ejemplo de otra tarjeta.</p>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p>Este es el footer de mi sitio</p>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
