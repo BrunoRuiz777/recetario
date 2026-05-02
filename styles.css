@@ -1,0 +1,20 @@
+.body{
+    margin: 1px;
+
+}
+.title{
+    background-color: #c30707;
+    color: white;
+    padding: 20px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 16px;
+    color: black;
+}
+

@@ -1,2 +1,2 @@
-# recetario
+# Recetario
 ch67-recetario-sala-2
